@@ -2,6 +2,8 @@ version: '3'
 services:
   app:
     build: .
-    tty: true 
+    tty: true
+    ports:
+      - 8000:8000
     volumes:
-      - .:/個人開発
+      - .:/personal-development
